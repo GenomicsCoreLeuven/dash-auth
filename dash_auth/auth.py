@@ -67,7 +67,7 @@ class Auth(ABC):
                 pathname = next(
                     (
                         inp["value"] for inp in body["inputs"]
-                        if isinstance(inp, dict) and if inp["property"] == "pathname"
+                        if isinstance(inp, dict) and inp["property"] == "pathname"
                     ),
                     None,
                 )
